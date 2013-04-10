@@ -20,5 +20,13 @@ Implementation of Election Algorithm + Apache Zookeeper Integration
 
 # Simulation
 
-TODO
+* Read Write Lock
+
+    mvn clean install
+
+    find the read-write-lock-1.0.0.jar at modules/read-write-lock/target
+
+    Then execute,
+
+        java -cp read-write-lock-1.0.0.jar org.labs.qbit.election.lock.ReadWriteLockClient
 
