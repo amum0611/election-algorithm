@@ -1,6 +1,6 @@
 # Introduction
 
-Implementation of Election Algorithm + Apache Zookeeper Integration
+Implementation of Read Write Lock and Election Algorithm with Apache Zookeeper
 
 # License
 
@@ -30,3 +30,17 @@ Implementation of Election Algorithm + Apache Zookeeper Integration
 
         java -cp read-write-lock-1.0.0.jar org.labs.qbit.election.lock.ReadWriteLockClient
 
+* Leader Election
+
+    mvn clean install
+
+    find leader-election-1.0.0.jar at modules/leader-election/target
+
+    Then execute,
+
+        java -cp leader-election-1.0.0.jar org.labs.qbit.election.leader.ElectionClient
+
+## Pre conditions
+
+    Zookeeper should be up and running on localhost:2181
+    Necessary JARs are included within the respective builds.
